@@ -11,7 +11,7 @@ var testNum = {
   },
   "2": {
     "title": "문제 2번",
-    "description": "내 의견에 반대한 후배는 두고두고 잊지 못한다.",
+    "description": "내 의견에 반대한 후배가 이뻐보이진 않는다.",
     "A": "매우 그렇다",
     "B": "그렇다",
     "C": "그렇지 않다",
@@ -104,13 +104,13 @@ var result = {
   "ggondae 1": {
     "score": 18,
     "r_title": "꼰대 of 꼰대",
-    "img": "ggondae1.png",
+    "img": "ggondae2.png",
     "explain": "당신은 회생불가한 꼰대입니다. 말하는 것보다 듣는 것에 집중해보세요. 생각보다 요즘애들은 단순하거든요!"
   },
   "ggondae 2": {
     "score":21,
     "r_title": "부장님 비켜~! 이구역 꼰대는 나야",
-    "img": "ggondae1.png",
+    "img": "ggondae2.png",
     "explain": "어쩌면 당신 부장님보다 더 까탈스러운 당신,, 그만큼 섬세하다는 말일 수도 있겠죠? 그래도 조금은 유연하게 후배들을 챙겨주세요!"
   },
   "ggondae 3": {
