@@ -309,22 +309,22 @@ Kakao.isInitialized();
     imageUrl:
       imgUrl,
     link: {
-      mobileWebUrl: 'http://ggondae.co.kr?result='+ r_title,
+      mobileWebUrl: 'http://ggondae.com?result='+ r_title,
     },
   },
   buttons: [
     {
       title: '결과 확인',
       link: {
-        mobileWebUrl: 'http://ggondae.co.kr?result='+ r_title,
-        webUrl: 'http://ggondae.co.kr?result='+ r_title,
+        mobileWebUrl: 'http://ggondae.com?result='+ r_title,
+        webUrl: 'http://ggondae.com?result='+ r_title,
       },
     },
     {
       title: '테스트하기',
       link: {
-        mobileWebUrl: 'http://ggondae.co.kr',
-        webUrl: 'http://ggondae.co.kr',
+        mobileWebUrl: 'http://ggondae.com',
+        webUrl: 'http://ggondae.com',
       },
     },
   ]
