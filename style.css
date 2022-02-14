@@ -167,8 +167,9 @@ box-shadow: 5px 5px;
 
 #made{
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 0.3em;
+  font-size: 10px;
   color: #BDBDBD;
+  text-align: center;
   border-top: 0.3em;
 }
 
