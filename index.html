@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>젊꼰 테스트</title>
+    <!-- css Import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="wrap">
+    <!-- 시작화면 -->
+    <div id="main" class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="mt-3">ㄴㅐ가 꼰ㄷhㄹr고 ? !</h1>
+          <img class="mt-2" src="img/main_icon.jpeg" width="70%">
+          <h3 class="mt-4">젊은 꼰대 테스트</h3>
+          <h4 class="mt-1">가보자고~!</h4>
+          <div class="d-grid gap-1">
+         <button id="start_btn" class="mt-1 btn-lg" type="button">START</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 문제화면 -->
+    <div id="test" class="container">
+      <div class="row">
+        <div class="col-12">
+          <p id="number" class="mt-5">문제번호 1/12</p>
+          <div class="progress">
+            <div id="progress" class="progress-bar-striped bg-info" role="progressbar" style="" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h5 id="title" class="mt-5">문제타이틀번호</h5>
+          <h4 id="description" class="mt-3">문제의 구체적인 내용이 들어갑니다</h4>
+          <input type="hidden" id="score" value="0">
+          <input type="hidden" id="Atag" value="0">
+          <input type="hidden" id="Btag" value="0">
+          <input type="hidden" id="Ctag" value="0">
+          <input type="hidden" id="Dtag" value="0">
+
+          <div class="mt-5 d-grid gap-2">
+            <button id="A" class="answerbtn" type="button">선택값 A</button>
+            <button id="B" class="answerbtn" type="button">선택값 B</button>
+            <button id="C" class="answerbtn" type="button">선택값 C</button>
+            <button id="D" class="answerbtn" type="button">선택값 D</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 결과화면 -->
+    <div id="result" class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="rm-tittle" class="mb-2">당신의 꼰대력은..</h2>
+          <img id="result_img" src="img/result.png" alt="결과이미지">
+          <h3 id="r_title" class="mt-2">결과 제목</h3>
+          <h5 id="explain" class="mt-1">결과 자세한 설명</h5>
+          <div class="mt-3 d-grid gap-2">
+            <button id="share_btn" type="button">카톡으로 공유하기</button>
+            <button id="retry_btn" type="button">다시시작</button>
+            <button id="copy_btn" type="button">링크복사</button>
+          </div>
+          <a id="made" href="https://blog.naver.com/flysjy97" class="mt-5"> 만든이 : 질서정연 </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+    <!-- JS import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="ggondae.js"></script>
+  </body>
+</html>
