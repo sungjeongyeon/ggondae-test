@@ -171,3 +171,11 @@ box-shadow: 5px 5px;
   color: #BDBDBD;
   border-top: 0.3em;
 }
+
+#made_{
+  font-family: 'Do Hyeon', sans-serif;
+  color : #BDBDBD;
+  text-align: center;
+  font-size: 10px;
+  border-top: 0.3em;
+}
