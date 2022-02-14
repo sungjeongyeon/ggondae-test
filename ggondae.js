@@ -101,61 +101,61 @@ var testNum = {
 };
 
 var result = {
-  "ggondae 1": {
+  "ggondae1": {
     "score": 18,
     "r_title": "꼰대 of 꼰대",
     "img": "ggondae2.png",
     "explain": "당신은 회생불가한 꼰대입니다. 말하는 것보다 듣는 것에 집중해보세요. 생각보다 요즘애들은 단순하거든요!"
   },
-  "ggondae 2": {
+  "ggondae2": {
     "score":21,
     "r_title": "부장님 비켜~! 이구역 꼰대는 나야",
     "img": "ggondae2.png",
     "explain": "어쩌면 당신 부장님보다 더 까탈스러운 당신,, 그만큼 섬세하다는 말일 수도 있겠죠? 그래도 조금은 유연하게 후배들을 챙겨주세요!"
   },
-  "ggondae 3": {
+  "ggondae3": {
     "score": 24,
     "r_title": "젊은꼰대 아니고 그냥 꼰대",
     "img": "ggondae1.png",
     "explain": "이제는 젊다는 말조차 당신에게는 어색하네요, 사회생활에 찌들다보니 당신도 모르는새 꼰대가 되어버렸어요. 좀 더 스스로에게 또 후배들에게 관대해져봅시다."
   },
-  "ggondae 4": {
+  "ggondae4": {
     "score": 27,
     "r_title": "죄송합니다 꼰대입니다",
     "img": "ggondae1.png",
     "explain": "당신이 꼰대라는게 저도 믿기지 않네요. 어찌보면 당연하게 생각드는 일들인데 요즘 친구들은 당신의 행동들을 꼰대라고 느끼나봐요. 우리 함께 젊은 사고를 가져봅시다."
   },
-  "ggondae 5": {
+  "ggondae5": {
     "score": 30,
     "r_title": "자네가 바로 요즘 꼰대",
     "img": "ggondae1.png",
     "explain": "당신.. 어디가서 '나는 꼰대 아니지~' 라는 말을 앵무새처럼 하고있을 것 같아요.. 근데 그런말 하는 것조차 꼰대 같답니다. 아직 기회가 있어요! 좀 더 열린 사고를 가져봅시다."
   },
-  "ggondae 6": {
+  "ggondae6": {
     "score": 33,
     "r_title": "꼰대되기 1초전",
     "img": "ggondae1.png",
     "explain": "조심하세요, 자칫 잘못하면 바로 꼰대되기 일보직전이에요. FM처럼 일하는데 꼰대라니 참 아이러니하죠. 일도 좋지만 후배들과 소통하는 시간을 좀 가져봅시다!"
   },
-  "ggondae 7": {
+  "ggondae7": {
     "score": 35,
     "r_title": "조금 불편한 선배",
     "img": "ggondae1.png",
     "explain": "당신은 잘 챙겨준다고 챙긴 것 같은데 아직 후배들에게는 조금 불편한 선배일 수 있어요! 회사생활이라는게 참 어렵네요, 잘해도 중간이니까 말이에요. 그래도 가끔은 조금 불편한 관계가 더 좋기도 하답니다."
   },
-  "ggondae 8": {
+  "ggondae8": {
     "score": 38,
     "r_title": "세상 스윗한 선배",
     "img": "ggondae1.png",
     "explain": "당신.. 요즘 귀가 간지럽지는 않나요? 후배들이 동네방네 당신 칭찬하고 다니거든요. 안타깝지만 꼰대랑은 거리가 멀어요! SWEET한게 싫다면 조금 정석대로 갈 필요도 있을것 같아요. "
   },
-  "ggondae 9": {
+  "ggondae9": {
     "score": 43,
     "r_title": "롤모델! 후배들의 선망의 대상",
     "img": "ggondae1.png",
     "explain": "일도 잘하고, 성격도 좋고, 후배까지 잘 챙겨주는 당신은 후배들의 선망의 대상이에요. 오늘도 후배들은 당신을 보면서 인류애를 느끼고 있답니다."
   },
-  "ggondae 10": {
+  "ggondae10": {
     "score": 48,
     "r_title": "너무 쿨한 선배",
     "img": "ggondae1.png",
@@ -228,34 +228,34 @@ var next = function(){
     document.querySelector('#result').style.display = "block";
     var resultType = '';
     if (document.querySelector('#score').value < 18){
-      resultType += 'ggondae 1'
+      resultType += 'ggondae1'
     }
     else if (document.querySelector('#score').value < 21){
-      resultType = 'ggondae 2';
+      resultType = 'ggondae2';
     }
     else if(document.querySelector('#score').value < 24){
-      resultType = 'ggondae 3';
+      resultType = 'ggondae3';
     }
     else if(document.querySelector('#score').value < 27){
-      resultType = 'ggondae 4';
+      resultType = 'ggondae4';
     }
     else if(document.querySelector('#score').value < 30){
-      resultType = 'ggondae 5';
+      resultType = 'ggondae5';
     }
     else if(document.querySelector('#score').value < 33){
-      resultType = 'ggondae 6';
+      resultType = 'ggondae6';
     }
     else if(document.querySelector('#score').value < 35){
-      resultType = 'ggondae 7';
+      resultType = 'ggondae7';
     }
     else if(document.querySelector('#score').value < 38){
-      resultType = 'ggondae 8';
+      resultType = 'ggondae8';
     }
     else if(document.querySelector('#score').value < 43){
-      resultType = 'ggondae 9';
+      resultType = 'ggondae9';
     }
     else if(document.querySelector('#score').value <= 48){
-      resultType = 'ggondae 10';
+      resultType = 'ggondae10';
     }
 
     console.log(score, resultType);
