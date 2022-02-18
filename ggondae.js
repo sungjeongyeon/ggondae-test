@@ -105,7 +105,7 @@ var result = {
     "score": 18,
     "r_title": "꼰대 of 꼰대",
     "img": "ggondae2.png",
-    "explain": "당신은 회생불가한 꼰대입니다. 말하는 것보다 듣는 것에 집중해보세요. 생각보다 요즘애들은 단순하거든요!"
+    "explain": "당신은 회생불가한 꼰대입니다. 말하는 것보다 듣는 것에 집중해보세요. "
   },
   "ggondae2": {
     "score":21,
@@ -141,7 +141,7 @@ var result = {
     "score": 35,
     "r_title": "조금 불편한 선배",
     "img": "ggondae1.png",
-    "explain": "당신은 잘 챙겨준다고 챙긴 것 같은데 아직 후배들에게는 조금 불편한 선배일 수 있어요! 회사생활이라는게 참 어렵네요, 잘해도 중간이니까 말이에요. 그래도 가끔은 조금 불편한 관계가 더 좋기도 하답니다."
+    "explain": "당신은 잘 챙겨준다고 챙긴 것 같은데 아직 후배들에게는 조금 불편한 선배일 수 있어요! 회사생활이라는게 참 어렵네요, 잘해도 중간이니까 말이에요. 그래도 가끔은 조금 불편한 관계가 더 좋죠."
   },
   "ggondae8": {
     "score": 38,
@@ -309,15 +309,15 @@ Kakao.isInitialized();
     imageUrl:
       imgUrl,
     link: {
-      mobileWebUrl: 'http://ggondae.com?result='+ r_title,
+      mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
     },
   },
   buttons: [
     {
       title: '결과 확인',
       link: {
-        mobileWebUrl: 'http://ggondae.com?result='+ r_title,
-        webUrl: 'http://ggondae.com?result='+ r_title,
+        mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
+        webUrl: 'http://ggondae.com?result='+ ggondae,
       },
     },
     {
