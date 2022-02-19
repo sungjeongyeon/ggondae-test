@@ -309,7 +309,7 @@ Kakao.isInitialized();
     imageUrl:
       imgUrl,
     link: {
-      mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
+      mobileWebUrl: 'http://ggondae.com',
     },
   },
   buttons: [
