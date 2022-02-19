@@ -314,17 +314,17 @@ Kakao.isInitialized();
   },
   buttons: [
     {
+      title: '결과 확인',
+      link: {
+        mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
+        webUrl: 'http://ggondae.com?result='+ ggondae,
+      },
+    },
+    {
       title: '테스트하기',
       link: {
         mobileWebUrl: 'http://ggondae.com',
         webUrl: 'http://ggondae.com',
-      },
-    },
-    {
-      title: '결과 확인',
-      link: {
-        mobileWebUrl: 'http://ggondae.com?result='+ resultType,
-        webUrl: 'http://ggondae.com?result='+ resultType,
       },
     },
   ]
