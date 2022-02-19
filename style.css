@@ -140,6 +140,11 @@ box-shadow: 5px 5px;
   padding: 0.5em;
 }
 
+#ggondae{
+  font-family: 'Do Hyeon', sans-serif;
+  color: black;
+  font-size:0.1em;
+}
 
 #r_title{
   margin-top: 0.2em;

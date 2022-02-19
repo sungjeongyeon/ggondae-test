@@ -271,6 +271,7 @@ var next = function(){
     console.log(score, resultType);
     console.log('result :: ', result);
     document.querySelector('#r_title').innerHTML = result[resultType]['r_title'];
+    document.querySelector('#ggondae').innerHTML = result[resultType]['ggondae'];
     document.querySelector('#explain').innerHTML = result[resultType]['explain'];
     document.querySelector("#result_img").setAttribute("src", 'img/' + result[resultType]['img']);
     history.replaceState({result: resultType}, '', '?result='+resultType); // MBTI 결과 쿼리 파라미터 삽입
@@ -319,7 +320,7 @@ Kakao.isInitialized();
     imageUrl:
       imgUrl,
     link: {
-      mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
+      mobileWebUrl: 'http://ggondae.com',
     },
   },
   buttons: [
