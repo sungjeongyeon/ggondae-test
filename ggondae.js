@@ -333,7 +333,7 @@ Kakao.isInitialized();
     var title = document.querySelector('#myresult').textContent;
     var desc = document.querySelector('#explain').textContent;
     var imgUrl = document.querySelector('#result_img').src;
-    var ggondae = new URL(location.href).searchParams.get('result');
+    var ggondae = new URL(location.href).searchParams.get('resultType');
 
     Kakao.Link.sendDefault({
   objectType: 'feed',
