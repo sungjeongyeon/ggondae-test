@@ -168,6 +168,9 @@ var testStart = function(){
   document.querySelector('#main').style.display = "none";
   document.querySelector('#test').style.display = "block";
   next();
+  dataLayer.push({
+    'event':'start'
+  });
 }
 
 document.querySelector('#start_btn').addEventListener('click', testStart);
@@ -182,6 +185,9 @@ var retry = function(){
     document.querySelector('#Btag').value= 0;
     document.querySelector('#Ctag').value= 0;
     history.replaceState({}, null, location.pathname);
+    dataLayer.push({
+    'event': 'retry'
+  });
   }
 
   document.querySelector('#retry_btn').addEventListener('click', retry);
@@ -196,6 +202,10 @@ document.querySelector('#A').addEventListener('click',function(){
   document.querySelector('#score').value = preValue+parseInt(1);
   preTagValueA++;
   document.querySelector('#Atag').value = preTagValueA;
+  dataLayer.push({
+  'event' : 'select_answer',
+  'answer' : 'A'
+});
   next();
 })
 document.querySelector('#B').addEventListener('click',function(){
@@ -203,6 +213,10 @@ document.querySelector('#B').addEventListener('click',function(){
   document.querySelector('#score').value = preValue+parseInt(2);
   preTagValueB++;
   document.querySelector('#Btag').value = preTagValueB;
+  dataLayer.push({
+  'event' : 'select_answer',
+  'answer' : 'B'
+});
   next();
 })
   document.querySelector('#C').addEventListener('click',function(){
@@ -210,6 +224,10 @@ document.querySelector('#B').addEventListener('click',function(){
     document.querySelector('#score').value = preValue+parseInt(3);
     preTagValueC++;
     document.querySelector('#Ctag').value = preTagValueC;
+    dataLayer.push({
+  'event' : 'select_answer',
+  'answer' : 'C'
+});
     next();
 })
   document.querySelector('#D').addEventListener('click',function(){
@@ -217,6 +235,10 @@ document.querySelector('#B').addEventListener('click',function(){
   document.querySelector('#score').value= preValue+parseInt(4);
   preTagValueD++;
   document.querySelector('#Dtag').value = preTagValueD;
+  dataLayer.push({
+  'event' : 'select_answer',
+  'answer' : 'D'
+});
   next();
 });
 
@@ -264,6 +286,11 @@ var next = function(){
     document.querySelector('#explain').innerHTML = result[resultType]['explain'];
     document.querySelector("#result_img").setAttribute("src", 'img/' + result[resultType]['img']);
     history.replaceState({result: resultType}, '', '?result='+ resultType); // MBTI 결과 쿼리 파라미터 삽입
+    dataLayer.push({
+      'event':'test_complete',
+      'score' : resultType,
+      'result_name':result[resultType]['r-title']
+    });
   }
 
   else{
@@ -275,6 +302,10 @@ var next = function(){
     document.querySelector('#B').innerHTML = testNum[i]['B'];
     document.querySelector('#C').innerHTML = testNum[i]['C'];
     document.querySelector('#D').innerHTML = testNum[i]['D'];
+    dataLayer.push({
+          'event':'view_question',
+          'question_no': i
+        });
     i++;
   }
 }
@@ -296,6 +327,9 @@ Kakao.isInitialized();
 
   // 카톡 공유 실행 함수
   var kakaoShare = function(){
+    dataLayer.push({
+   'event':'kakao_share'
+ });
     var title = document.querySelector('#myresult').textContent;
     var desc = document.querySelector('#explain').textContent;
     var imgUrl = document.querySelector('#result_img').src;
