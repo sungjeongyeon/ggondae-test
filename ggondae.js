@@ -348,10 +348,10 @@ Kakao.isInitialized();
   },
   buttons: [
     {
-      title: '결과 확인'+resultType,
+      title: '결과 확인',
       link: {
-        mobileWebUrl: 'https://ggondae.com?result='+resultType,
-        webUrl: 'https://ggondae.com?result='+resultType,
+        mobileWebUrl: 'https://ggondae-test.com/index?result='+resultType,
+         webUrl: 'https://ggondae-test.com/index?result=' +resultType,
       },
     },
     {
