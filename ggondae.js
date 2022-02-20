@@ -260,10 +260,10 @@ var next = function(){
 
     console.log(score, resultType);
     console.log('result :: ', result);
-    document.querySelector('#r_title').innerHTML = result[resultType]['r_title'];
+    document.querySelector('#myresult').innerHTML = result[resultType]['r_title'];
     document.querySelector('#explain').innerHTML = result[resultType]['explain'];
     document.querySelector("#result_img").setAttribute("src", 'img/' + result[resultType]['img']);
-    history.replaceState({result: resultType}, '', '?result='+resultType); // MBTI 결과 쿼리 파라미터 삽입
+    history.replaceState({result: resultType}, '', '?result='+ resultType); // MBTI 결과 쿼리 파라미터 삽입
   }
 
   else{
@@ -285,7 +285,7 @@ var next = function(){
    document.querySelector('#main').style.display = "none";
    document.querySelector('#result').style.display = "block";
    var resultType = shareParams;
-   document.querySelector('#r_title').innerHTML = result[resultType]['r_title'];
+   document.querySelector('#myresult').innerHTML = result[resultType]['r_title'];
    document.querySelector('#explain').innerHTML = result[resultType]['explain'];
    document.querySelector("#result_img").setAttribute("src", 'img/' + result[resultType]['img']);
  }
@@ -296,7 +296,7 @@ Kakao.isInitialized();
 
   // 카톡 공유 실행 함수
   var kakaoShare = function(){
-    var title = document.querySelector('#r_title').textContent;
+    var title = document.querySelector('#myresult').textContent;
     var desc = document.querySelector('#explain').textContent;
     var imgUrl = document.querySelector('#result_img').src;
     var ggondae = new URL(location.href).searchParams.get('result');
@@ -316,8 +316,8 @@ Kakao.isInitialized();
     {
       title: '결과 확인',
       link: {
-        mobileWebUrl: 'http://ggondae.com?result='+ resultType,
-        webUrl: 'http://ggondae.com?result='+ resultType,
+        mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
+        webUrl: 'http://ggondae.com?result='+ ggondae,
       },
     },
     {
