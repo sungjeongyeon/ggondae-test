@@ -333,7 +333,7 @@ Kakao.isInitialized();
     var title = document.querySelector('#myresult').textContent;
     var desc = document.querySelector('#explain').textContent;
     var imgUrl = document.querySelector('#result_img').src;
-    var ggondae = new URL(location.href).searchParams.get('resultType');
+    var ggondae = new URL(location.href).searchParams.get('result');
 
     Kakao.Link.sendDefault({
   objectType: 'feed',
@@ -348,7 +348,7 @@ Kakao.isInitialized();
   },
   buttons: [
     {
-      title: '결과 확인',
+      title: '결과 확인'+resultType,
       link: {
         mobileWebUrl: 'https://ggondae.com?result='+resultType,
         webUrl: 'https://ggondae.com?result='+resultType,
