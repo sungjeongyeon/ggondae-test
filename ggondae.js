@@ -350,8 +350,8 @@ Kakao.isInitialized();
     {
       title: '결과 확인',
       link: {
-        mobileWebUrl: 'http://ggondae.com?result='+ ggondae,
-        webUrl: 'http://ggondae.com?result='+ ggondae,
+        mobileWebUrl: 'http://ggondae.com?result='+ggondae,
+        webUrl: 'http://ggondae.com?result='+ggondae,
       },
     },
     {
