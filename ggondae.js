@@ -248,48 +248,48 @@ var next = function(){
   if(i==13){
     document.querySelector('#test').style.display = "none";
     document.querySelector('#result').style.display = "block";
-    var resultType = '';
+    var ggondae = '';
     if (document.querySelector('#score').value < 18){
-      resultType += 'ggondae1'
+      ggondae += 'ggondae1'
     }
     else if (document.querySelector('#score').value < 21){
-      resultType = 'ggondae2';
+      ggondae = 'ggondae2';
     }
     else if(document.querySelector('#score').value < 24){
-      resultType = 'ggondae3';
+      ggondae = 'ggondae3';
     }
     else if(document.querySelector('#score').value < 27){
-      resultType = 'ggondae4';
+      ggondae = 'ggondae4';
     }
     else if(document.querySelector('#score').value < 30){
-      resultType = 'ggondae5';
+      ggondae = 'ggondae5';
     }
     else if(document.querySelector('#score').value < 33){
-      resultType = 'ggondae6';
+      ggondae = 'ggondae6';
     }
     else if(document.querySelector('#score').value < 35){
-      resultType = 'ggondae7';
+      ggondae = 'ggondae7';
     }
     else if(document.querySelector('#score').value < 38){
-      resultType = 'ggondae8';
+      ggondae = 'ggondae8';
     }
     else if(document.querySelector('#score').value < 43){
-      resultType = 'ggondae9';
+      ggondae = 'ggondae9';
     }
     else if(document.querySelector('#score').value <= 48){
-      resultType = 'ggondae10';
+      ggondae = 'ggondae10';
     }
 
-    console.log(score, resultType);
+    console.log(score, ggondae);
     console.log('result :: ', result);
-    document.querySelector('#myresult').innerHTML = result[resultType]['r_title'];
-    document.querySelector('#explain').innerHTML = result[resultType]['explain'];
-    document.querySelector("#result_img").setAttribute("src", 'img/' + result[resultType]['img']);
-    history.replaceState({result: resultType}, '', '?result='+ resultType); // MBTI 결과 쿼리 파라미터 삽입
+    document.querySelector('#myresult').innerHTML = result[ggondae]['r_title'];
+    document.querySelector('#explain').innerHTML = result[ggondae]['explain'];
+    document.querySelector("#result_img").setAttribute("src", 'img/' + result[ggondae]['img']);
+    history.replaceState({result: ggondae}, '', '?result='+ ggondae); // MBTI 결과 쿼리 파라미터 삽입
     dataLayer.push({
       'event':'test_complete',
-      'score' : resultType,
-      'result_name':result[resultType]['r-title']
+      'score' : ggondae,
+      'result_name':result[ggondae]['r-title']
     });
   }
 
@@ -315,10 +315,10 @@ var next = function(){
  if (Object.keys(result).includes(shareParams) === true){
    document.querySelector('#main').style.display = "none";
    document.querySelector('#result').style.display = "block";
-   var resultType = shareParams;
-   document.querySelector('#myresult').innerHTML = result[resultType]['r_title'];
-   document.querySelector('#explain').innerHTML = result[resultType]['explain'];
-   document.querySelector("#result_img").setAttribute("src", 'img/' + result[resultType]['img']);
+   var ggondae = shareParams;
+   document.querySelector('#myresult').innerHTML = result[ggondae]['r_title'];
+   document.querySelector('#explain').innerHTML = result[ggondae]['explain'];
+   document.querySelector("#result_img").setAttribute("src", 'img/' + result[ggondae]['img']);
  }
 
 // 카카오 SDK 초기화
