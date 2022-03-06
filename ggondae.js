@@ -132,25 +132,25 @@ var result = {
     "explain": "당신.. 어디가서 '나는 꼰대 아니지~' 라는 말을 앵무새처럼 하고있을 것 같아요.. 근데 그런말 하는 것조차 꼰대 같답니다. 아직 기회가 있어요! 좀 더 열린 사고를 가져봅시다."
   },
   "ggondae6": {
-    "score": 33,
+    "score": 35,
     "r_title": "꼰대되기 1초전",
     "img": "ggondae6.png",
     "explain": "조심하세요, 자칫 잘못하면 꼰대되기 일보직전이에요. FM처럼 일하는데 꼰대라니 참 아이러니하죠. 일도 좋지만 후배들과 소통하는 시간을 좀 가져봅시다!"
   },
   "ggondae7": {
-    "score": 35,
+    "score": 40,
     "r_title": "조금 불편한 선배",
     "img": "ggondae7.png",
     "explain": "당신은 잘 챙겨준다고 챙긴 것 같은데 아직 후배들에게는 조금 불편한 선배일 수 있어요! 회사생활이라는게 참 어렵네요, 잘해도 중간이니까 말이에요. 그래도 이런 불편한 관계가 제일 좋을 수도 있어요."
   },
   "ggondae8": {
-    "score": 38,
+    "score": 43,
     "r_title": "세상 스윗한 선배",
     "img": "ggondae8.png",
     "explain": "당신.. 요즘 귀가 간지럽지는 않나요? 후배들이 동네방네 당신 칭찬하고 다니거든요. 안타깝지만 꼰대랑은 거리가 멀어요! SWEET한게 싫다면 조금 정석대로 갈 필요도 있을것 같아요. "
   },
   "ggondae9": {
-    "score": 43,
+    "score": 46,
     "r_title": "롤모델! 후배들의 선망의 대상",
     "img": "ggondae9.png",
     "explain": "일도 잘하고, 성격도 좋고, 후배까지 잘 챙겨주는 당신은 후배들의 선망의 대상이에요. 오늘도 후배들은 당신을 보면서 인류애를 느끼고 있답니다 ^0^"
@@ -264,16 +264,16 @@ var next = function(){
     else if(document.querySelector('#score').value < 30){
       ggondae = 'ggondae5';
     }
-    else if(document.querySelector('#score').value < 33){
+    else if(document.querySelector('#score').value < 35){
       ggondae = 'ggondae6';
     }
-    else if(document.querySelector('#score').value < 35){
+    else if(document.querySelector('#score').value < 40){
       ggondae = 'ggondae7';
     }
-    else if(document.querySelector('#score').value < 38){
+    else if(document.querySelector('#score').value < 43){
       ggondae = 'ggondae8';
     }
-    else if(document.querySelector('#score').value < 43){
+    else if(document.querySelector('#score').value < 46){
       ggondae = 'ggondae9';
     }
     else if(document.querySelector('#score').value <= 48){
